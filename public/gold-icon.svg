@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="45%" stop-color="#FFB300"/>
+      <stop offset="70%" stop-color="#FFA000"/>
+      <stop offset="100%" stop-color="#FF6F00"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect x="24" y="24" width="464" height="464" rx="104" stroke="#D97706" stroke-opacity="0.3" stroke-width="4"/>
+  <!-- Gold Ingot -->
+  <polygon points="176,140 336,140 400,320 112,320" fill="url(#goldGrad)" filter="drop-shadow(0 12px 24px rgba(0,0,0,0.4))"/>
+  <polygon points="176,140 336,140 312,200 200,200" fill="#FFF8E1" fill-opacity="0.5"/>
+  <polygon points="112,320 400,320 376,372 136,372" fill="#B45309"/>
+  <!-- Stamp -->
+  <text x="256" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="#78350F" text-anchor="middle" letter-spacing="4">999.9</text>
+  <text x="256" y="302" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#92400E" text-anchor="middle" letter-spacing="2">FINE GOLD</text>
+</svg>

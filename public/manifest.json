@@ -1,0 +1,17 @@
+{
+  "name": "Keping Emas — Portofolio Emas Fisik",
+  "short_name": "Keping Emas",
+  "description": "Portofolio & Hitung Otomatis Emas Fisik Antam, UBS, Galeri24, HRTA Gold",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C0D0E",
+  "theme_color": "#0C0D0E",
+  "icons": [
+    {
+      "src": "/gold-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

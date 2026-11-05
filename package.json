@@ -1,0 +1,24 @@
+{
+  "name": "keping-emas",
+  "version": "1.0.0",
+  "description": "Portofolio Emas Fisik Otomatis & Terpercaya (Antam, UBS, Galeri24, HRTA Gold)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "test": "node test/check.js"
+  },
+  "dependencies": {
+    "lucide-react": "^1.68.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "@vitejs/plugin-react": "^6.2.1",
+    "tailwindcss": "^4.3.4",
+    "vite": "^8.3.5"
+  }
+}
