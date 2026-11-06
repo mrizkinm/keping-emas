@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { calculateFractions, getLiveOrCachedPrices, serveStaticSafe, loadPriceHistory, savePriceHistory, HISTORY_FILE } from '../server.js';
 import { validateAndSanitizeItems, hashPin, THEME_KEY, HIDE_NOMINAL_KEY, LAST_PRICES_KEY, PRICE_HISTORY_KEY, generateItemId, NISAB_GRAMS, ZAKAT_RATE, calculateGoldZakat } from '../src/hooks/useGoldData.js';
+import pricesApiHandler from '../api/prices.js';
 
 console.log('Testing Keping Emas logic & security...');
 
@@ -58,6 +59,9 @@ assert.strictEqual(validData[1].brand, 'hrta');
 assert.strictEqual(validData[2].brand, 'other');
 assert.strictEqual(validData[2].customBrand, 'Lotus Archi');
 assert.strictEqual(validData[2].benchmarkBrand, 'ubs');
+assert.deepStrictEqual(validateAndSanitizeItems([]), [], 'Empty array should remain empty array');
+assert.strictEqual(validateAndSanitizeItems(null), null, 'null should return null');
+assert.strictEqual(validateAndSanitizeItems('invalid'), null, 'string should return null');
 
 // Test 6: Path traversal containment
 let statusCode = 200;
@@ -138,5 +142,20 @@ assert.strictEqual(aboveNisab.isNisabReached, true);
 assert.strictEqual(aboveNisab.zakatGrams, 2.5);
 assert.strictEqual(aboveNisab.zakatNominalRp, 5750000);
 assert.strictEqual(aboveNisab.progressPercent, 100);
+
+// Test 14: Vercel serverless /api/prices handler
+let apiStatusCode = 0;
+let apiHeaders = {};
+let apiEndedData = '';
+const mockApiRes = {
+  get statusCode() { return apiStatusCode; },
+  set statusCode(code) { apiStatusCode = code; },
+  setHeader: (k, v) => { apiHeaders[k] = v; },
+  end: (data) => { apiEndedData = data; }
+};
+await pricesApiHandler({ method: 'GET', url: '/api/prices' }, mockApiRes);
+assert.strictEqual(apiStatusCode, 200, 'Serverless /api/prices should return 200');
+const parsedApiData = JSON.parse(apiEndedData);
+assert.ok(parsedApiData.brands.antam, 'Serverless API should return brand data');
 
 console.log('✅ All self-check assertions passed successfully!');

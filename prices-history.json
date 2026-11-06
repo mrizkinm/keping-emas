@@ -1,7 +1,7 @@
 {
   "latest": {
-    "updatedAt": "2026-11-05T09:41:39.755Z",
-    "displayDate": "Kamis, 5 November 2026",
+    "updatedAt": "2026-11-06T09:53:01.469Z",
+    "displayDate": "Jumat, 6 November 2026",
     "isLive": true,
     "isHistoricalFallback": false,
     "source": "Live Portal Resmi Pegadaian & Hartadinata",
@@ -10,7 +10,7 @@
       {
         "date": "2026-11-05",
         "displayDate": "Kamis, 5 November 2026",
-        "updatedAt": "2026-11-05T09:41:39.755Z",
+        "updatedAt": "2026-11-05T09:45:10.881Z",
         "brands": {
           "antam": {
             "sell": 2596000,
@@ -29,213 +29,236 @@
             "buyback": 2264000
           }
         }
+      },
+      {
+        "date": "2026-11-06",
+        "displayDate": "Jumat, 6 November 2026",
+        "updatedAt": "2026-11-06T09:53:01.469Z",
+        "brands": {
+          "antam": {
+            "sell": 2604000,
+            "buyback": 2334000
+          },
+          "ubs": {
+            "sell": 2540000,
+            "buyback": 2334000
+          },
+          "galeri24": {
+            "sell": 2507000,
+            "buyback": 2360000
+          },
+          "hrta": {
+            "sell": 2456000,
+            "buyback": 2260000
+          }
+        }
       }
     ],
     "brands": {
       "antam": {
         "id": "antam",
         "name": "Antam LM",
-        "basePricePerGram": 2596000,
-        "buybackPerGram": 2344000,
+        "basePricePerGram": 2604000,
+        "buybackPerGram": 2334000,
         "fractions": [
           {
             "weight": 0.5,
-            "sellPrice": 1349000,
-            "buybackPrice": 1172000
+            "sellPrice": 1353000,
+            "buybackPrice": 1167000
           },
           {
             "weight": 1,
-            "sellPrice": 2596000,
-            "buybackPrice": 2344000
+            "sellPrice": 2604000,
+            "buybackPrice": 2334000
           },
           {
             "weight": 2,
-            "sellPrice": 5130000,
-            "buybackPrice": 4688000
+            "sellPrice": 5147000,
+            "buybackPrice": 4668000
           },
           {
             "weight": 3,
-            "sellPrice": 7670000,
-            "buybackPrice": 7033000
+            "sellPrice": 7694000,
+            "buybackPrice": 7003000
           },
           {
             "weight": 5,
-            "sellPrice": 12749000,
-            "buybackPrice": 11722000
+            "sellPrice": 12789000,
+            "buybackPrice": 11671000
           },
           {
             "weight": 10,
-            "sellPrice": 25441000,
-            "buybackPrice": 23444000
+            "sellPrice": 25523000,
+            "buybackPrice": 23343000
           },
           {
             "weight": 25,
-            "sellPrice": 63476000,
-            "buybackPrice": 58321000
+            "sellPrice": 63679000,
+            "buybackPrice": 58070000
           },
           {
             "weight": 50,
-            "sellPrice": 126870000,
-            "buybackPrice": 116642000
+            "sellPrice": 127276000,
+            "buybackPrice": 116141000
           },
           {
             "weight": 100,
-            "sellPrice": 253661000,
-            "buybackPrice": 233285000
+            "sellPrice": 254473000,
+            "buybackPrice": 232282000
           }
         ]
       },
       "ubs": {
         "id": "ubs",
         "name": "UBS Gold",
-        "basePricePerGram": 2565000,
-        "buybackPerGram": 2344000,
+        "basePricePerGram": 2540000,
+        "buybackPerGram": 2334000,
         "fractions": [
           {
             "weight": 0.5,
-            "sellPrice": 1386000,
-            "buybackPrice": 1172000
+            "sellPrice": 1373000,
+            "buybackPrice": 1167000
           },
           {
             "weight": 1,
-            "sellPrice": 2565000,
-            "buybackPrice": 2344000
+            "sellPrice": 2540000,
+            "buybackPrice": 2334000
           },
           {
             "weight": 2,
-            "sellPrice": 5090000,
-            "buybackPrice": 4688000
+            "sellPrice": 5041000,
+            "buybackPrice": 4668000
           },
           {
             "weight": 5,
-            "sellPrice": 12577000,
-            "buybackPrice": 11722000
+            "sellPrice": 12457000,
+            "buybackPrice": 11671000
           },
           {
             "weight": 10,
-            "sellPrice": 25023000,
-            "buybackPrice": 23444000
+            "sellPrice": 24783000,
+            "buybackPrice": 23343000
           },
           {
             "weight": 25,
-            "sellPrice": 62433000,
-            "buybackPrice": 58321000
+            "sellPrice": 61836000,
+            "buybackPrice": 58070000
           },
           {
             "weight": 50,
-            "sellPrice": 124610000,
-            "buybackPrice": 116642000
+            "sellPrice": 123418000,
+            "buybackPrice": 116141000
           },
           {
             "weight": 100,
-            "sellPrice": 249122000,
-            "buybackPrice": 233285000
+            "sellPrice": 246737000,
+            "buybackPrice": 232282000
           }
         ]
       },
       "galeri24": {
         "id": "galeri24",
         "name": "Galeri 24",
-        "basePricePerGram": 2518000,
-        "buybackPerGram": 2370000,
+        "basePricePerGram": 2507000,
+        "buybackPerGram": 2360000,
         "fractions": [
           {
             "weight": 0.5,
-            "sellPrice": 1320000,
-            "buybackPrice": 1182000
+            "sellPrice": 1315000,
+            "buybackPrice": 1177000
           },
           {
             "weight": 1,
-            "sellPrice": 2518000,
-            "buybackPrice": 2370000
+            "sellPrice": 2507000,
+            "buybackPrice": 2360000
           },
           {
             "weight": 2,
-            "sellPrice": 4974000,
-            "buybackPrice": 4731000
+            "sellPrice": 4953000,
+            "buybackPrice": 4710000
           },
           {
             "weight": 5,
-            "sellPrice": 12345000,
-            "buybackPrice": 11827000
+            "sellPrice": 12291000,
+            "buybackPrice": 11776000
           },
           {
             "weight": 10,
-            "sellPrice": 24622000,
-            "buybackPrice": 23655000
+            "sellPrice": 24517000,
+            "buybackPrice": 23553000
           },
           {
             "weight": 25,
-            "sellPrice": 61225000,
-            "buybackPrice": 58846000
+            "sellPrice": 60962000,
+            "buybackPrice": 58593000
           },
           {
             "weight": 50,
-            "sellPrice": 122353000,
-            "buybackPrice": 117692000
+            "sellPrice": 121827000,
+            "buybackPrice": 117186000
           },
           {
             "weight": 100,
-            "sellPrice": 244583000,
-            "buybackPrice": 235384000
+            "sellPrice": 243534000,
+            "buybackPrice": 234372000
           }
         ]
       },
       "hrta": {
         "id": "hrta",
         "name": "HRTA Gold (EMASKU)",
-        "basePricePerGram": 2461000,
-        "buybackPerGram": 2264000,
+        "basePricePerGram": 2456000,
+        "buybackPerGram": 2260000,
         "fractions": [
           {
             "weight": 0.1,
-            "sellPrice": 308000,
+            "sellPrice": 307000,
             "buybackPrice": 226000
           },
           {
             "weight": 0.25,
-            "sellPrice": 708000,
-            "buybackPrice": 566000
+            "sellPrice": 706000,
+            "buybackPrice": 565000
           },
           {
             "weight": 0.5,
-            "sellPrice": 1317000,
-            "buybackPrice": 1132000
+            "sellPrice": 1314000,
+            "buybackPrice": 1130000
           },
           {
             "weight": 1,
-            "sellPrice": 2535000,
-            "buybackPrice": 2264000
+            "sellPrice": 2530000,
+            "buybackPrice": 2260000
           },
           {
             "weight": 2,
-            "sellPrice": 4996000,
-            "buybackPrice": 4528000
+            "sellPrice": 4986000,
+            "buybackPrice": 4520000
           },
           {
             "weight": 5,
-            "sellPrice": 12403000,
-            "buybackPrice": 11320000
+            "sellPrice": 12378000,
+            "buybackPrice": 11300000
           },
           {
             "weight": 10,
-            "sellPrice": 24807000,
-            "buybackPrice": 22640000
+            "sellPrice": 24756000,
+            "buybackPrice": 22600000
           },
           {
             "weight": 25,
-            "sellPrice": 61525000,
-            "buybackPrice": 56600000
+            "sellPrice": 61400000,
+            "buybackPrice": 56500000
           },
           {
             "weight": 50,
-            "sellPrice": 123050000,
-            "buybackPrice": 113200000
+            "sellPrice": 122800000,
+            "buybackPrice": 113000000
           },
           {
             "weight": 100,
-            "sellPrice": 246100000,
-            "buybackPrice": 226400000
+            "sellPrice": 245600000,
+            "buybackPrice": 226000000
           }
         ]
       }
@@ -245,7 +268,7 @@
     "2026-11-05": {
       "date": "2026-11-05",
       "displayDate": "Kamis, 5 November 2026",
-      "updatedAt": "2026-11-05T09:41:39.755Z",
+      "updatedAt": "2026-11-05T09:45:10.881Z",
       "brands": {
         "antam": {
           "sell": 2596000,
@@ -262,6 +285,29 @@
         "hrta": {
           "sell": 2461000,
           "buyback": 2264000
+        }
+      }
+    },
+    "2026-11-06": {
+      "date": "2026-11-06",
+      "displayDate": "Jumat, 6 November 2026",
+      "updatedAt": "2026-11-06T09:53:01.469Z",
+      "brands": {
+        "antam": {
+          "sell": 2604000,
+          "buyback": 2334000
+        },
+        "ubs": {
+          "sell": 2540000,
+          "buyback": 2334000
+        },
+        "galeri24": {
+          "sell": 2507000,
+          "buyback": 2360000
+        },
+        "hrta": {
+          "sell": 2456000,
+          "buyback": 2260000
         }
       }
     }

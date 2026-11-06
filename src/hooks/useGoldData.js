@@ -73,52 +73,22 @@ export function validateAndSanitizeItems(list) {
       serialNumber: String(it.serialNumber || '').slice(0, 50),
       notes: String(it.notes || '').slice(0, 100)
     }));
-
-  return valid.length > 0 ? valid : null;
+  return valid;
 }
-
-const DEFAULT_ITEMS = [
-  {
-    id: 'item-1',
-    brand: 'antam',
-    weight: 10,
-    buyPrice: 24000000,
-    buyDate: '2025-10-15',
-    serialNumber: 'LM-99281',
-    notes: 'Investasi Jangka Panjang'
-  },
-  {
-    id: 'item-2',
-    brand: 'ubs',
-    weight: 5,
-    buyPrice: 12000000,
-    buyDate: '2026-01-20',
-    serialNumber: 'UBS-7712',
-    notes: 'Tabungan Darurat'
-  },
-  {
-    id: 'item-3',
-    brand: 'hrta',
-    weight: 1,
-    buyPrice: 2380000,
-    buyDate: '2026-03-05',
-    serialNumber: 'HRT-3301',
-    notes: 'Kado Emas Batangan'
-  }
-];
 
 export function useGoldData() {
   const [items, setItems] = useState(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) {
-        const sanitized = validateAndSanitizeItems(JSON.parse(saved));
-        if (sanitized) return sanitized;
+      if (saved !== null) {
+        const parsed = JSON.parse(saved);
+        const sanitized = validateAndSanitizeItems(parsed);
+        if (sanitized !== null) return sanitized;
       }
     } catch {
       // fallback
     }
-    return DEFAULT_ITEMS;
+    return [];
   });
 
   const [pinHash, setPinHash] = useState(() => {
@@ -383,7 +353,7 @@ export function useGoldData() {
 
   const importItems = (newItemsList) => {
     const sanitized = validateAndSanitizeItems(newItemsList);
-    if (sanitized) {
+    if (sanitized && sanitized.length > 0) {
       setItems(sanitized);
       return true;
     }
