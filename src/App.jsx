@@ -236,8 +236,8 @@ export default function App() {
         </main>
 
         {/* Minimalist Bottom Navigation Bar (48px+ touch targets) */}
-        <nav className="fixed bottom-0 left-0 right-0 z-40 flex justify-center pointer-events-none pb-safe">
-          <div className="w-full max-w-md bg-[#0C0D0E]/95 backdrop-blur-md border-t border-[#26292D] px-2 py-1.5 flex items-center justify-around pointer-events-auto">
+        <nav className="fixed bottom-0 left-0 right-0 z-40 flex justify-center pointer-events-none">
+          <div className="w-full max-w-md bg-[#0C0D0E]/95 backdrop-blur-md border-t border-x border-[#26292D] px-2 pt-1.5 pb-safe flex items-center justify-around pointer-events-auto">
             <button
               onClick={() => handleSelectTab('dashboard')}
               className={`flex-1 min-h-[48px] py-1 flex flex-col items-center justify-center gap-1 transition-colors active:scale-95 ${

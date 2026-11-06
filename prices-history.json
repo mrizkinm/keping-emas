@@ -1,6 +1,6 @@
 {
   "latest": {
-    "updatedAt": "2026-11-06T09:53:01.469Z",
+    "updatedAt": "2026-11-06T09:59:06.875Z",
     "displayDate": "Jumat, 6 November 2026",
     "isLive": true,
     "isHistoricalFallback": false,
@@ -33,7 +33,7 @@
       {
         "date": "2026-11-06",
         "displayDate": "Jumat, 6 November 2026",
-        "updatedAt": "2026-11-06T09:53:01.469Z",
+        "updatedAt": "2026-11-06T09:59:06.875Z",
         "brands": {
           "antam": {
             "sell": 2604000,
@@ -291,7 +291,7 @@
     "2026-11-06": {
       "date": "2026-11-06",
       "displayDate": "Jumat, 6 November 2026",
-      "updatedAt": "2026-11-06T09:53:01.469Z",
+      "updatedAt": "2026-11-06T09:59:06.875Z",
       "brands": {
         "antam": {
           "sell": 2604000,
