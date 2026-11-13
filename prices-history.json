@@ -1,6 +1,6 @@
 {
   "latest": {
-    "updatedAt": "2026-11-13T07:12:37.504Z",
+    "updatedAt": "2026-11-13T07:25:25.936Z",
     "displayDate": "Jumat, 13 November 2026",
     "isLive": true,
     "isHistoricalFallback": false,
@@ -337,7 +337,7 @@
     "2026-11-13": {
       "date": "2026-11-13",
       "displayDate": "Jumat, 13 November 2026",
-      "updatedAt": "2026-11-13T07:12:37.504Z",
+      "updatedAt": "2026-11-13T07:25:25.936Z",
       "brands": {
         "antam": {
           "sell": 2547000,
