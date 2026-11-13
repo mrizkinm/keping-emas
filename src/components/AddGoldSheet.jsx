@@ -364,7 +364,6 @@ export default function AddGoldSheet({
                 <input
                   type="text"
                   inputMode="numeric"
-                  pattern="[0-9]*"
                   autoComplete="off"
                   required
                   placeholder="0"
